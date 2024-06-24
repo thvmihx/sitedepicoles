@@ -1,0 +1,272 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --bg-color:var(--bg-color)#101113;
+    --text-color:#fff;
+    --main-color:#e01a4b;
+    --other-color: #fcfcfc;
+    --h1-font:3rem;
+    --p-font:1rem;
+}
+
+body{
+    background-color: rgb(241, 172, 159);
+    color: var(--tx-color); 
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 40px 8%;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.logo i{
+    color: var(--main-color);
+    font-size: 70px;
+    margin-right: 5px;
+}
+ 
+.navegação{
+    display: flex;
+
+}
+
+.navegação a{
+    color:  var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 5000;
+    margin: 0 30px;
+    transition: a .55s ease;
+}
+
+.navegação a:hover {
+    color: var(--main-color);
+
+}
+
+.header-icons{
+    display: flex;
+    align-items: center;
+
+}
+
+#menu{
+    font-size:35 ;
+    color: var(--text-color);
+    z-index:10001;
+    cursor: pointer;
+}
+
+.header-icons i{
+    margin-left: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.header-icons i:hover{
+    transform: translateY(-5px);
+    color: var(--main-color);
+
+}
+
+.home{
+    flex-direction: row;
+    position:relative;
+    height: 100vh;
+    width: 56%;
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    align-items:center;
+    gap: 2rem;
+
+}
+
+.home-text h1{
+    color: rgb(255, 255, 255);
+    font-size: var(--h1-font);
+    line-height: 1.5;
+    margin-left: 3px;
+
+}
+
+.home-text h3{
+    color: #000000;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.home-img{
+    max-width: 100%;
+    width: 28rem;
+    height: auto;
+    margin-left: 35%;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 15px 70px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: solid 2px var( --text-color);
+    transition: all.55 ease;
+    color: #fff;
+}
+
+.btn:hover{
+    background:#fff;
+    border: 2px solid var(--text-color);
+    color:var(--main-color);
+}
+
+.main{
+    position: absolute ;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+
+.main li img{
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+.row{
+    justify-content: center;
+    transition: all,55s ease;
+    cursor: pointer;
+    display: inline-flex;
+
+}
+
+.row :hover{
+    transform: translateY(-8px);
+}
+
+.row2{
+    justify-content: center;
+    transition: all,55s ease;
+    cursor: pointer;
+    display: inline-flex;
+
+}
+
+.row2 :hover{
+    transform: translateY(-8px);
+}
+
+.row3{
+    justify-content: center;
+    transition: all,55s ease;
+    cursor: pointer;
+    display: inline-flex;
+
+}
+
+.row3 :hover{
+    transform: translateY(-8px);
+}
+
+@media screen and (max-width: 1020px){
+     
+    /* cabecalho */
+    .navegação, .header-icons {
+        display: none;
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+    .home-text h1{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        line-height:1;
+        margin-left: 190px;
+    
+    }
+    
+    .home-text h3{
+        text-align: center;
+        color: #000000;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 8px;
+        margin-bottom: 35px;
+        margin-left: 50%;
+        
+    }
+    
+    .home-img{
+        max-width: 120%;
+        width: 28rem;
+        height: auto;
+        margin-left: 33%;
+    }
+
+    .main{
+        position: relative;
+        
+    }
+
+
+    .btn{
+        margin-left: 200px;
+    }
+
+    .row{
+        max-width: 120%;
+        width: 28rem;
+        height: auto;
+        margin-left: 40%;
+    }
+
+    .row2{
+        max-width: 120%;
+        width: 28rem;
+        height: auto;
+        margin-left: 40%;
+    }
+
+    .row3{
+        max-width: 120%;
+        width: 28rem;
+        height: auto;
+        margin-left: 40%;
+    }
+
+    }
